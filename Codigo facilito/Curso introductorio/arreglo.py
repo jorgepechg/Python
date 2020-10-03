@@ -29,12 +29,26 @@ print(numbers)
 print(numbers.pop(0))#Nos devuelve un valor de acuerdo a su posición y lo retira de la lista
 print(numbers)
 
-numbers.insert(0,8)#agrega un valor, primero se define la posicion del indice
+numbers.insert(0,8)#agrega un valor, primero se define la posicion que ocupara en el indice
 print(numbers)
 
-numbers.remove(8)#remueve un elemento, pero sin devolvernos su valor
+numbers[0] = "Canela" #modifica el valor de un elemento indicando su posicion en el indice
+print(numbers)
+
+numbers.remove(5)#remueve un elemento, pero sin devolvernos su valor
+print(numbers)
+
+print(numbers.count(4))#Nos indica el numero de veces que se repite un valor
+
+numbers.reverse()#ordena los numeros en reversa
+print(numbers)
+
+numbers.extend(colores)#extiende una lista sumandole los elementos de otra
 print(numbers)
 
 
+#METODOS UTILES EN UN DICCIONARIO
 
+print(person.pop("lastName"))#en lugar del indice indcamos el nombre de la clave
 
+person.update({"phone":"7868"})
